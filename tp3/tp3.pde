@@ -2,13 +2,13 @@
 // Comision 3
 // TP #3
 
-
-int estado = 0;
-
 void setup() {
 
   size(600, 600);
+
+  
 }
+ 
 
 void draw() {
 
@@ -16,9 +16,17 @@ void draw() {
     inicio();
   } else if ( estado== 1) {
     jugando();
-  }
+  }else if (estado==2) {
+   pantallaganaste(); 
+  } else if (estado==3){
+   pantallaperdiste(); 
+  } else if(estado==4){
+    pantallaganaste();
+  }else if(estado==5){
+    pantallacreditos();}
 
-
-  //ver coordenadas
-  println(mouseX, mouseY);
 }
+  
+ 
+
+ 
